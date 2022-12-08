@@ -42,6 +42,7 @@ public class BookController {
     public String test(){
         System.out.println("--------");
         System.out.println("hot-fix");
+        System.out.println("master");
         return "test";
     }
 
