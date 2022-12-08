@@ -44,6 +44,7 @@ public class BookController {
         System.out.println("hot-fix");
         System.out.println("master");
         System.out.println("hot-fix1");
+        System.out.println("pull...");
         return "test";
     }
 
