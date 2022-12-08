@@ -41,6 +41,7 @@ public class BookController {
     @GetMapping("/test")
     public String test(){
         System.out.println("--------");
+        System.out.println("hot-fix");
         return "test";
     }
 
