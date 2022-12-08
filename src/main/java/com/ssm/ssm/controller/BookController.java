@@ -40,6 +40,7 @@ public class BookController {
 
     @GetMapping("/test")
     public String test(){
+        System.out.println("--------");
         return "test";
     }
 
