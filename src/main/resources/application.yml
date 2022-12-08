@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/cloudlibrary
+    username: root
+    password: root
+  mvc:
+    view:
+      prefix: classpath:/webapp/
+      suffix: .jsp
+  thymeleaf:
+    prefix: classpath:/webapp/
+    suffix: .jsp
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

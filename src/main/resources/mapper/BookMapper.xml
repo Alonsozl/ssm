@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssm.ssm.mapper.BookMapper">
+
+    <resultMap id="BaseResultMap" type="com.ssm.ssm.domain.Book">
+            <id property="bookId" column="book_id" jdbcType="INTEGER"/>
+            <result property="bookName" column="book_name" jdbcType="VARCHAR"/>
+            <result property="bookIsbn" column="book_isbn" jdbcType="VARCHAR"/>
+            <result property="bookPress" column="book_press" jdbcType="VARCHAR"/>
+            <result property="bookAuthor" column="book_author" jdbcType="VARCHAR"/>
+            <result property="bookPagination" column="book_pagination" jdbcType="INTEGER"/>
+            <result property="bookPrice" column="book_price" jdbcType="DOUBLE"/>
+            <result property="bookUploadtime" column="book_uploadtime" jdbcType="VARCHAR"/>
+            <result property="bookStatus" column="book_status" jdbcType="VARCHAR"/>
+            <result property="bookBorrower" column="book_borrower" jdbcType="VARCHAR"/>
+            <result property="bookBorrowtime" column="book_borrowtime" jdbcType="VARCHAR"/>
+            <result property="bookReturntime" column="book_returntime" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        book_id,book_name,book_isbn,
+        book_press,book_author,book_pagination,
+        book_price,book_uploadtime,book_status,
+        book_borrower,book_borrowtime,book_returntime
+    </sql>
+</mapper>
